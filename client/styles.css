@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+#container {
+  width: 300px;
+  height: 600px;
+  margin: 0 auto;
+  /*border: 1px solid gray;*/
+  border-radius: 40px;
+  margin-top: 40px;
+  box-shadow: 6px 5px 23px #7a7a7644;
+}
+#title {
+  background-color: #d21c2d;
+}
