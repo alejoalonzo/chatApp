@@ -14,7 +14,7 @@ var messages = [
   {
     id: 1,
     text: "Welcome to this chat",
-    nickname: "Bot - AlejandroAlonzo",
+    nickname: "Bot - Alejandro",
   },
 ];
 
@@ -23,8 +23,16 @@ io.on("connection", function (socket) {
     `the client with IP: ${socket.handshake.address} is connected...`
   );
   socket.emit("messages", messages);
+
+  socket.emit("messages", messages);
+  socket.on("add-message", function (data) {
+    messages.push(data);
+  });
+  io.sockets.emit("messages", messages);
 });
 
 server.listen(6677, function () {
   console.log("server is running on : http://localhost:6677");
 });
+
+//https://alta-soft.eu/difarmed-fr-test/

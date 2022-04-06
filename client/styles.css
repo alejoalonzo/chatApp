@@ -11,10 +11,77 @@ body {
   height: 600px;
   margin: 0 auto;
   /*border: 1px solid gray;*/
+  margin-left: 200px;
   border-radius: 40px;
   margin-top: 40px;
   box-shadow: 6px 5px 23px #7a7a7644;
 }
 #title {
   background-color: #d21c2d;
+  color: rgb(224, 224, 224);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 10px 0 15px 0;
+  border-radius: 40px 40px 0 0;
+  text-align: center;
 }
+#messages {
+  width: 95%;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid rgb(206, 206, 206);
+  font-family: "Raleway", sans-serif;
+  overflow: hidden; 
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 5px
+}
+
+.message {
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+form input, form textarea{
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  margin: 3px 0;
+}
+
+form textarea:focus-visible, form input:focus-visible{
+  outline: none;
+}
+
+
+#submit{
+  background-color: #d21c2d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  position: absolute;
+  top: 535px;
+  left: 460px;
+  padding: 15px;
+  cursor: pointer;
+}
+#submit:hover{
+  background-color: #b31827;
+}
+
+  #svgSubmit{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 545px;
+    left: 469px;
+    cursor: pointer;
+  }
